@@ -1,18 +1,22 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from "react";
+import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
-  project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
-  },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
-  footer: {
-    text: 'Nextra Docs Template',
-  },
-}
+	logo: <img src="/sicsr-logo-light.svg" />,
+	project: {
+		link: "https://github.com/paraswtf/sicsr-time-table-docs/"
+	},
+	chat: {
+		link: "https://discord.com"
+	},
+	docsRepositoryBase: "https://github.com/paraswtf/sicsr-time-table-docs/tree/main/",
+	footer: {
+		text: "Sicsr Time-Table Application Documentation"
+	},
+	primaryHue: 354,
+	nextThemes: {
+		defaultTheme: "light"
+	}
+};
 
-export default config
+export default config;

@@ -1,0 +1,35 @@
+import Badge from "../components/badge";
+
+# Response JSON
+
+The API will always return a JSON object with the following structure:
+
+```typescript
+// SUCCESS RESPONSE:
+{
+    "status": number;
+    "data": object;
+}
+
+//ERROR RESPONSE:
+{
+    "status": number;
+    "message": string;
+    "data": object | undefined;
+}
+```
+
+---
+
+# API Endpoints
+
+The API currently has the followig endpoints:
+
+Utilities:
+
+-   <Badge>`GET:/api`</Badge> - Get information about the API and list its endpoints
+-   <Badge>`GET:/api/ping`</Badge> - Check if the server is running
+
+Data:
+
+-   <Badge>`GET:/api/schedule/:id`</Badge> - Get personalised schedule for a specific user

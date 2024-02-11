@@ -1,19 +1,23 @@
-import Badge from "../components/badge";
+import Badge from "../../components/Badge";
 
-# Response JSON
+## Response Data Structure
 
-The API will always return a JSON object with the following structure:
+The response data follows the following structure throughout the API:
+
+### Success Response
 
 ```typescript
-// SUCCESS RESPONSE:
 {
-    "status": number;
+    "status": 200;
     "data": object;
 }
+```
 
-//ERROR RESPONSE:
+### Error Response
+
+```typescript
 {
-    "status": number;
+    "status": 500| 400 | 401;
     "message": string;
     "data": object | undefined;
 }
@@ -21,15 +25,15 @@ The API will always return a JSON object with the following structure:
 
 ---
 
-# API Endpoints
+## API Endpoints
 
-The API currently has the followig endpoints:
+The API currently supports the followig endpoints:
 
-Utilities:
+### Utility
 
 -   <Badge>`GET:/api`</Badge> - Get information about the API and list its endpoints
 -   <Badge>`GET:/api/ping`</Badge> - Check if the server is running
 
-Data:
+### Data
 
 -   <Badge>`GET:/api/schedule/:id`</Badge> - Get personalised schedule for a specific user

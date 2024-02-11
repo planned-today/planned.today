@@ -1,6 +1,16 @@
 {
-	"index": "Introduction",
-	"endpoints": "API",
+	"index": {
+		"title": "Home",
+		"type": "page"
+	},
+	"api-documentation": {
+		"title": "API Documentation",
+		"type": "page"
+	},
+	"usage": {
+		"title": "Usage Guide",
+		"type": "page"
+	},
 	"about": {
 		"title": "time-table",
 		"type": "page"

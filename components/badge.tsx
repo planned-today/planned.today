@@ -4,11 +4,13 @@ import { useTheme } from "nextra-theme-docs";
 
 export interface BadgeProps {
 	children: React.ReactNode;
-	method: "GET" | "POST" | "DELETE" | "PATCH";
+	method: "GET" | "POST" | "DELETE" | "PATCH" | "ANY";
+	href?: string;
+	rel?: string;
 }
 
-function getColor(method: BadgeProps["method"]) {
-	const { theme } = useTheme();
+export function getColor(method: BadgeProps["method"]) {
+	const { resolvedTheme } = useTheme();
 	switch (method) {
 		case "POST":
 			return "blue";
@@ -16,20 +18,24 @@ function getColor(method: BadgeProps["method"]) {
 			return "red";
 		case "PATCH":
 			return "orange";
-		default:
 		case "GET":
-			return theme === "dark" ? "lightgreen" : "green";
+			return resolvedTheme === "dark" ? "lightgreen" : "green";
+		default:
+			return resolvedTheme === "dark" ? "lightgrey" : "grey";
 	}
 }
 
-export default function Badge({ children, method }: BadgeProps) {
+export default function Badge({ children, method, href, rel }: BadgeProps) {
 	return (
-		<span
+		<a
 			style={{
-				color: getColor(method)
+				color: getColor(method),
+				textDecoration: "none"
 			}}
+			href={href}
+			rel={rel}
 		>
 			{children}
-		</span>
+		</a>
 	);
 }

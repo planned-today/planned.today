@@ -1,4 +1,4 @@
 {
-	"api": "/api",
+	"slash-api": "/api",
 	"ping": "/api/ping"
 }

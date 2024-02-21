@@ -1,0 +1,26 @@
+{
+  "name": "planned.today",
+  "version": "0.0.0",
+  "description": "A simple and easy to use room reservation system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paraswtf/planned.today.git"
+  },
+  "keywords": [
+    "College",
+    "Timetable"
+  ],
+  "author": "Paras Deshpande, Pranav Praveen, Shruti Vhanmane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paraswtf/planned.today/issues"
+  },
+  "homepage": "https://github.com/paraswtf/planned.today#readme",
+  "devDependencies": {
+    "@mosaicstudiosin/prettier-config": "^2.0.1"
+  }
+}

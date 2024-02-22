@@ -1,7 +1,9 @@
-/** @type {import('next').NextConfig} */
-
 const githubUrl = "https://github.com/planned-today/planned.today";
+
+/** @type {import('next').NextConfig} */
 const nextConfig = {
+	poweredByHeader: true,
+
 	async redirects() {
 		return [
 			{

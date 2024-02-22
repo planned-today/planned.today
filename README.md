@@ -2,7 +2,7 @@
 
 # About the project
 
-Planned.today is a simple and easy room reservation system for educational institutions.
+Planned.today is a simple and easy to use room reservation system for educational institutions.
 
 It is designed to be used by students, teachers and coordinators to reserve rooms for classes, meetings, and other events.
 

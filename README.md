@@ -31,9 +31,10 @@ It is also designed to be flexible and customizable, with support for multiple r
 
 # Meet the team behind the project
 
--   Paras Deshpane (project lead)
--   Shruti Vhanmane (project lead)
+-   Paras Deshpane (project lead/design & planning)
+-   Shruti Vhanmane (project lead/development)
 -   Pranav Praveen (project lead/documentation)
 -   Aadhya Rastogi (user research/surveys)
 -   Abel Vergheese Roy (user research)
+-   Tejas Gupta (Graphic design)
 -   Masumi Jain (UI design)

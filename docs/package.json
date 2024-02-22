@@ -1,0 +1,33 @@
+{
+  "name": "planned-today-docs",
+  "version": "0.0.1",
+  "description": "The docs for Planned.today",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "prettier": "@mosaicstudiosin/prettier-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planned-today/planned.today.git"
+  },
+  "author": "Pranav Praveen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/planned-today/planned.today/issues"
+  },
+  "homepage": "https://github.com/planned-today/planned.today#readme",
+  "dependencies": {
+    "next": "^13.5.6",
+    "nextra": "^2.13.3",
+    "nextra-theme-docs": "^2.13.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@mosaicstudiosin/prettier-config": "^2.0.1",
+    "@types/node": "18.11.10",
+    "typescript": "^4.9.3"
+  }
+}

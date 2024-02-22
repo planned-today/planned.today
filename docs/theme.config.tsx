@@ -24,7 +24,7 @@ const config: DocsThemeConfig = {
 	}
 };
 
-export default {
+const themeConfig = {
 	config,
 	useNextSeoProps() {
 		const { asPath } = useRouter();
@@ -35,3 +35,5 @@ export default {
 		}
 	}
 };
+
+export default themeConfig;

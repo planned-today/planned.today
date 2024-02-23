@@ -12,6 +12,10 @@
 		"type": "page",
 		"href": "https://planned.today"
 	},
+	"development": {
+		"title": "Development Reference",
+		"type": "page"
+	},
 	"contact": {
 		"title": "Contact",
 		"type": "page"

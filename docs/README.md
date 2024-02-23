@@ -1,23 +1,39 @@
-# Nextra Docs Template 
+![img](/assets/header-logo-wbg.svg)
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+# About the project
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+Planned.today is a simple and easy room reservation system for educational institutions.
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+It is designed to be used by students, teachers and coordinators to reserve rooms for classes, meetings, and other events.
 
-## Quick Start
+The interface is designed to be easy to understand and us wiith very little or almost no knowhow with the key focus being on usability and accessibility.
 
-Click the button to clone this repository and deploy it on Vercel:
+It is also designed to be flexible and customizable, with support for multiple room types, time slots, and other options.
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+## Key features
 
-## Local Development
+-   Repeating events.
+-   Sending mails to students/admins/co-ordinators for event updates.
+-   Attendee groups. (for example BCA I Div.A, BCA I Div.B)
+-   Attendance tracking and exporting to excel.
+-   Easy to use and a modern UI.
+-   Reserve rooms and classes for events.
+-   Room max occupancy and availability.
+-   Conflict Detection.
+-   Stable and fast backend.
 
-First, run `pnpm i` to install the dependencies.
+# Tech stack
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
+-   Typescript (Language)
+-   NextJS (Backend)
+-   MongoDB (Database)
+-   React and Mantine UI (Frontend)
 
-## License
+# Meet the team behind the project
 
-This project is licensed under the MIT License.
+-   Paras Deshpane (project lead)
+-   Shruti Vhanmane (project lead)
+-   Pranav Praveen (project lead/documentation)
+-   Aadhya Rastogi (user research/surveys)
+-   Abel Vergheese Roy (user research)
+-   Masumi Jain (UI design)

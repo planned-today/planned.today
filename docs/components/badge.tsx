@@ -9,7 +9,7 @@ export interface BadgeProps {
 	rel?: string;
 }
 
-export function getColor(method: BadgeProps["method"]) {
+export function useColor(method: BadgeProps["method"]) {
 	const { resolvedTheme } = useTheme();
 	switch (method) {
 		case "POST":
@@ -29,7 +29,7 @@ export default function Badge({ children, method, href, rel }: BadgeProps) {
 	return (
 		<a
 			style={{
-				color: getColor(method),
+				color: useColor(method),
 				textDecoration: "none"
 			}}
 			href={href}

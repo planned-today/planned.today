@@ -9,7 +9,7 @@ const config: DocsThemeConfig = {
 			{" "}
 			<Image
 				src="/assets/head-logo-icon.svg"
-				width="200"
+				width="160"
 				height="80"
 				alt="Planned.today"
 			/>{" "}
@@ -18,14 +18,14 @@ const config: DocsThemeConfig = {
 	project: {
 		link: "https://github.com/paraswtf/planned.today/"
 	},
-	docsRepositoryBase: "https://github.com/shuding/nextra-docs-template",
+	docsRepositoryBase: "https://github.com/paraswtf/planned.today",
 	footer: {
 		text: "Planned.today"
 	}
 };
 
 const themeConfig = {
-	config,
+	...config,
 	useNextSeoProps() {
 		const { asPath } = useRouter();
 		if (asPath !== "/") {

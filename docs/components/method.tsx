@@ -1,6 +1,6 @@
 //The Request method badge used in docs
 
-import { getColor, BadgeProps } from "./badge";
+import { useColor, BadgeProps } from "./badge";
 import { useTheme } from "nextra-theme-docs";
 
 export interface MethodProps {
@@ -14,10 +14,16 @@ export default function Method({ method, href, rel }: MethodProps) {
 	return (
 		<a
 			style={{
-				color: getColor(method),
+				color: useColor(method),
 				textDecoration: "none",
-				backgroundColor: resolvedTheme === "dark" ? "rgba(255,255,255,.1)" : "rgba(0, 0, 0, 0.03)",
-				borderColor: resolvedTheme === "dark" ? "rgba(255,255,255,.1)" : "rgba(0, 0, 0, 0.03)",
+				backgroundColor:
+					resolvedTheme === "dark"
+						? "rgba(255,255,255,.1)"
+						: "rgba(0, 0, 0, 0.03)",
+				borderColor:
+					resolvedTheme === "dark"
+						? "rgba(255,255,255,.1)"
+						: "rgba(0, 0, 0, 0.03)",
 				borderWidth: "1px",
 				borderRadius: "20px",
 				padding: "2px 10px 5px 10px"

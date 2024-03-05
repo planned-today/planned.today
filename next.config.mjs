@@ -13,6 +13,11 @@ const nextConfig = {
 				source: "/docs",
 				destination: "https://docs.planned.today",
 				permanent: true
+			},
+			{
+				source: "/faculty-survey",
+				destination: "https://forms.gle/gcL23D41QLda7VFAA",
+				permanent: true
 			}
 		];
 	}

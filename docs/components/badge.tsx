@@ -1,5 +1,3 @@
-//The Request method badge used in docs
-
 import { useTheme } from "nextra-theme-docs";
 
 export interface BadgeProps {
@@ -9,28 +7,35 @@ export interface BadgeProps {
 	rel?: string;
 }
 
-export function useColor(method: BadgeProps["method"]) {
-	const { resolvedTheme } = useTheme();
+export function useColor(method: BadgeProps["method"], theme: string) {
 	switch (method) {
+		case "GET":
+			return theme === "dark" ? "#90EE90" : "green";
 		case "POST":
 			return "blue";
 		case "DELETE":
 			return "red";
 		case "PATCH":
 			return "orange";
-		case "GET":
-			return resolvedTheme === "dark" ? "lightgreen" : "green";
 		default:
-			return resolvedTheme === "dark" ? "lightgrey" : "grey";
+			return theme === "dark" ? "lightgrey" : "grey";
 	}
 }
 
 export default function Badge({ children, method, href, rel }: BadgeProps) {
+	const { resolvedTheme } = useTheme();
+	const badgeColor = useColor(method, resolvedTheme);
+	const isDarkTheme = resolvedTheme === "dark";
+
 	return (
 		<a
 			style={{
-				color: useColor(method),
-				textDecoration: "none"
+				color: badgeColor,
+				textDecoration: "none",
+				backgroundColor: isDarkTheme ? "#3C3C39" : "inherit",
+				borderRadius: "20px",
+				padding: "2px 10px 5px 10px",
+				border: isDarkTheme ? "solid 0.1px #4d4d4d" : "none"
 			}}
 			href={href}
 			rel={rel}

@@ -21,7 +21,7 @@ const nextConfig = {
 			},
 			{
 				source: "/survey/:path*",
-				destination: "https://oajqzltv.forms.app/faculty-user-research/:path*",
+				destination: "https://oajqzltv.forms.app/faculty-user-research#65eaa856ffebbf3114ccda27=:path*",
 				permanent: true
 			}
 		];

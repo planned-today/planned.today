@@ -20,8 +20,8 @@ const nextConfig = {
 				permanent: true
 			},
 			{
-				source: "/survey",
-				destination: "https://oajqzltv.forms.app/faculty-user-research",
+				source: "/survey/:path*",
+				destination: "https://oajqzltv.forms.app/faculty-user-research/:path*",
 				permanent: true
 			}
 		];

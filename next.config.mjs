@@ -18,6 +18,11 @@ const nextConfig = {
 				source: "/faculty-survey",
 				destination: "https://forms.gle/gcL23D41QLda7VFAA",
 				permanent: true
+			},
+			{
+				source: "/survey/:path*",
+				destination: "https://oajqzltv.forms.app/faculty-user-research/:path*",
+				permanent: true
 			}
 		];
 	}

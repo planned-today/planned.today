@@ -4,7 +4,7 @@
 
 Planned.today is a simple and easy to use room reservation system for educational institutions.
 
-It is designed to be used by students, teachers and coordinators to reserve rooms for classes, meetings, and other events.
+It is designed to be used by students, teachers and coordinators and admins to reserve rooms for classes, meetings, and other events.
 
 The interface is designed to be easy to understand and us wiith very little or almost no knowhow with the key focus being on usability and accessibility.
 
@@ -33,8 +33,11 @@ It is also designed to be flexible and customizable, with support for multiple r
 
 -   Paras Deshpane (project lead/design & planning)
 -   Shruti Vhanmane (project lead/development)
--   Pranav Praveen (project lead/documentation)
 -   Aadhya Rastogi (user research/surveys)
 -   Abel Vergheese Roy (user research)
--   Tejas Gupta (Graphic design)
--   Masumi Jain (UI design)
+
+# Contributing
+
+If you wish to contribute to the planned.today codebase or documentation, feel free to fork the repository and submit a pull request.
+
+Read the [contributing guide](CONTRIBUTING.MD) for more information.
